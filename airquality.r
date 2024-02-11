@@ -11,3 +11,5 @@ summary(mod)
 plot(data$Ozone ~ data$Temp)
 
 abline(mod, col = "black", lwd = 2)
+
+print(shapiro.test(resid(mod)))
